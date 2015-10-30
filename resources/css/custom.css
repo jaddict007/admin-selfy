@@ -9,7 +9,7 @@
 }
 
 body {
-    background: none 0 0 scroll repeat #f8f8f8;
+    background: none 0 0 scroll repeat #fff;
     line-height: 1;
 }
 
@@ -25,4 +25,25 @@ body {
     font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/** Navbar Styling **/
+body .navbar-default .navbar-brand{
+	color: #777;
+}
+body .navbar-default .navbar-nav > li > a{
+	color: #777;
+}
+body .navbar-default .navbar-nav > li > a:focus,
+body .navbar-default .navbar-nav > li > a:hover{
+	color: #333;
+}
+body .dropdown-menu .divider{
+	background-color: #e5e5e5;
+}
+
+
+/** Commons **/
+.mr15{
+	margin-right: 15px !important;
 }
