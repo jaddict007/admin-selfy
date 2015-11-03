@@ -13,6 +13,10 @@ body {
     line-height: 1;
 }
 
+ul, li{
+	list-style: none;
+}
+
 #wrapper{
     width: 100%;
 }
@@ -40,6 +44,16 @@ body .navbar-default .navbar-nav > li > a:hover{
 }
 body .dropdown-menu .divider{
 	background-color: #e5e5e5;
+}
+
+/** Sidebar **/
+.sidebar{
+	background: none 0 0 scroll repeat #f8f8f8;
+	border-right: 1px solid #e7e7e7;
+	position: absolute;
+	top: 51px;
+	left: 0;
+	width: 300px;
 }
 
 /** Main Content **/
