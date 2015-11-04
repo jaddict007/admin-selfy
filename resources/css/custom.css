@@ -1,16 +1,35 @@
 *, html, body{
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
+    border: none medium;
+    outline: none medium;
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
 }
 
 body {
-    background: none 0 0 scroll repeat #fff;
+    background: none 0 0 scroll repeat #f8f8f8;
     line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6{
+	border: none medium;
+	color: #777;
+	margin: 0;
+    padding: 0;
+    outline: none medium;
+    line-height:normal;
+}
+
+p, a{
+	color: #777;
+}
+
+a:hover, a:active, a:focus{
+	text-decoration: none;
+	color: #333;
+	outline: none medium;
 }
 
 ul, li{
@@ -32,6 +51,9 @@ ul, li{
 }
 
 /** Navbar Styling **/
+body .navbar-default{
+	margin-bottom: 0;
+}
 body .navbar-default .navbar-brand{
 	color: #777;
 }
@@ -48,21 +70,57 @@ body .dropdown-menu .divider{
 
 /** Sidebar **/
 .sidebar{
-	background: none 0 0 scroll repeat #f8f8f8;
-	border-right: 1px solid #e7e7e7;
 	position: absolute;
 	top: 51px;
 	left: 0;
 	width: 300px;
 }
+.sidebar ul{
+	margin: 20px 0;
+}
+.sidebar ul li{
+	border-bottom: 1px solid #e7e7e7;
+}
+.sidebar ul li a{
+	display: block;
+	padding: 15px;
+}
+
+.sidebar ul li ul{
+	margin: 0;
+}
+.sidebar ul li ul li{
+	border: none medium;
+}
 
 /** Main Content **/
 #main{
-	margin-top: 50px;
+	background: none 0 0 scroll repeat #fff;
+	border-left: 1px solid #e7e7e7;
+	margin: 0 0 0 300px;
+	padding: 0 20px;
+	min-height: 600px;
+}
+
+#main h1{
+	color: #333;
+	text-align: left;
+	margin: 15px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px solid #eee;
 }
 
 
 /** Commons **/
 .mr15{
 	margin-right: 15px !important;
+}
+
+
+@media only screen and (max-width: 768px){
+	body .navbar-right{margin: 0 15px}
+	
+	.sidebar{position: static;width: auto}
+	
+	#main{margin: 0}
 }
