@@ -36,6 +36,10 @@ ul, li{
 	list-style: none;
 }
 
+textarea{
+	resize: none;
+}
+
 #wrapper{
     width: 100%;
 }
@@ -138,10 +142,21 @@ body .dropdown-menu .divider{
 }
 #main h3{
 	color: #333;
-	text-align: center;
 	margin: 15px 0;
+	text-align: center;
 }
 
+#main .overall{
+	margin: 30px -15px;
+}
+#main .overall .huge{
+	font-size: 40px;
+	margin: 0 0 18px 0;
+	padding: 0;
+}
+#main .panel-heading{
+	padding: 15px;
+}
 
 /** Commons **/
 .mr15{
