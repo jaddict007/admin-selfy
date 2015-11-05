@@ -73,7 +73,7 @@ body .dropdown-menu .divider{
 	position: absolute;
 	top: 51px;
 	left: 0;
-	width: 300px;
+	width: 250px;
 	opacity: 1;
 	z-index: 1;
 	transition: .5s ease-in;
@@ -114,15 +114,19 @@ body .dropdown-menu .divider{
 #main{
 	background: none 0 0 scroll repeat #fff;
 	border-left: 1px solid #e7e7e7;
-	margin: 0 0 0 300px;
+	margin: 0 0 0 250px;
 	padding: 0 20px;
 	position: relative;
 	z-index: 2;
 	min-height: 900px;
-	transition: .3s ease-in;
+	transition: margin .3s ease-in;
 }
 #main.main-full{
 	margin: 0;
+}
+
+#main.loading{
+	background: url(../images/loading.GIF) center 200px scroll no-repeat #fff;
 }
 
 #main h1{
