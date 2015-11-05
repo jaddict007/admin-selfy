@@ -24,6 +24,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
+					
+					<button type="button" id="menu-opener"><i class="fa fa-bars"></i></button>
 					<a class="navbar-brand" href="/">Project name</a>
 				</div>
 				<ul class="nav navbar-nav navbar-right mr15">
@@ -86,6 +88,29 @@
 		<div class="col-md-12">
 			<div class="row">
 				<h1>Dashboard</h1>
+				
+				
+				<h3>Orders</h3>
+				<div id="toolbar" class="btn-group">
+					<button type="button" class="btn btn-default">
+						<i class="glyphicon glyphicon-plus"></i> Add
+					</button>
+					<button type="button" class="btn btn-default">
+						<i class="glyphicon glyphicon-trash"></i> Delete
+					</button>
+				</div>
+				<table id="table" data-toggle="table" data-url="/resources/json/data5.json" data-height="550"
+					data-click-to-select="true" data-single-select="true"
+					data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-columns="true"
+					data-pagination="true" data-page-list="[10, 25, 50, 100, 250, 500, 1000, ALL]" data-toolbar="#toolbar">
+					<thead>
+						<tr>
+							<th data-field="id">Id</th>
+							<th data-field="name">Name</th>
+							<th data-field="price">Price</th>
+						</tr>
+					</thead>
+				</table>
 				
 			</div>
 		</div>
